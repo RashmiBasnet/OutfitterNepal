@@ -25,9 +25,9 @@ import {
     Subtitle,
     FormGroup
 } from "../styles/signup";
-//import { registerApi } from "../apis/api.jsx";
+import { registerApi } from "../api/api";
 
-//const API_BASE_URL = "http://localhost:4000"; 
+const API_BASE_URL = "http://localhost:4000"; 
 
 const SignUp = () => {
     const { register, handleSubmit, reset, setError, watch, getValues, formState: { errors } } = useForm();
@@ -53,7 +53,6 @@ const SignUp = () => {
             return;
         }
     
-        /*
         try {
             console.log("📤 Sending Registration Data:", data);
             const res = await registerApi(data);
@@ -72,7 +71,6 @@ const SignUp = () => {
         }
         
         reset();
-        */
     };
     
 

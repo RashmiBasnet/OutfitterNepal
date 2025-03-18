@@ -47,7 +47,7 @@ function Trips() {
     };
 
     const bookClick = () => {
-        navigate("/book");  // Navigate to /rooms when the button is clicked
+        navigate("/trips");  // Navigate to /rooms when the button is clicked
     };
 
     return (

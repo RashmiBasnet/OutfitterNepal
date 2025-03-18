@@ -46,12 +46,12 @@ function Home() {
     const handleClick = () => setClick(!click);
     const toggleDropdown = () => setDropdown(prev => !prev);
 
-    const roomsClick = () => {
-        navigate("/rooms");  // Navigate to /rooms when the button is clicked
+    const tripsClick = () => {
+        navigate("/trips");  // Navigate to /rooms when the button is clicked
     };
 
     const bookClick = () => {
-        navigate("/book");  // Navigate to /rooms when the button is clicked
+        navigate("/home");  // Navigate to /rooms when the button is clicked
     };
 
     return (
@@ -234,7 +234,7 @@ function Home() {
 
 
                     </Packages>
-                    <ViewAllBtn onClick={roomsClick}>View All</ViewAllBtn>
+                    <ViewAllBtn onClick={tripsClick}>View All</ViewAllBtn>
                 </PackageContainer>
             </Content>
         </Container>
